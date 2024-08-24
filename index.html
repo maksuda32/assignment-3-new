@@ -24,6 +24,9 @@
         tailwind.config = {
           theme: {
             extend: {
+              backgroundImage: {
+                'last-bg':'url("./assets/bg.jpg")',
+              },
               colors: {
                 clifford: '#da373d',
                 'button-color': '#ABEF5F',
@@ -103,7 +106,7 @@
             </div>
           </div>
     </div>
-    <main class="bg-base-200">
+    <main class="bg-base-200 overflow-hidden">
         <section class="lg:my-28 my-1 bg-base-200 lg:max-w-screen-xl lg:mx-auto px-4">
             <div class="lg:ml-40 mb-2 hidden lg:block">
                 <img src="./assets/Vector.png" alt="">
@@ -219,47 +222,183 @@
           </div>
         </section>
         <!--Porfolio Title-->
-        <section class="lg:my-28 my-5 bg-white">
+        <section class="lg:my-28 my-5 bg-white lg:py-20">
           <div class="text-center space-y-2 lg:max-w-screen-xl lg:mx-auto px-8">
             <a class="btn btn-sm lg:mt-5 lg:ml-2 rounded-2xl bg-down-button-bg"><i class="fa-solid fa-arrow-right  text-gray-600 bg-down-button-bg rounded-full w-5 h-5 inline-flex justify-center items-center"></i>Explore our Latest works</a>
-            <h2 class="text-3xl font-bold">Read Our Articles and News</h2>
+            <h2 class="text-3xl font-bold">Our Latest Portfolio</h2>
             <p class="py-1 text-xs">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
           </div>
 
           <!---Card Design-->
-          <div class="grid lg:grid-cols-2 grid-cols-1 gap-9 lg:max-w-screen-xl mt-10 lg:mx-auto lg:px-8 space-y-2">
-            <div class="hero border border-inherit border-solid lg:ml-32">
-              <div class="hero-content flex-col lg:flex-row">
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-2 lg:max-w-screen-xl mt-10 lg:mx-auto">
+            <div class="hero border border-inherit border-solid p-3 lg:ml-40 lg:max-w-lg">
+              <div class=" flex gap-5 flex-col lg:flex-row">
                 <img
-                  src="./assets/img1.png"
+                  src="./assets/img4.png"
                   class="lg:max-w-sm rounded-lg w-full" />
-                <div>
-                  <h1 class="text-lg font-bold">Commercial</h1>
+                <div class="">
+                  <h1 class="text-xl font-bold">Commercial</h1>
                   <p class="py-6 text-xs">
-                    The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                    The barn house captivates with its blend of rustic charm and modern. 
                   </p>
-                  <button class="btn  btn-sm rounded-2xl bg-down-button-bg">View Details<i class="fa-solid fa-arrow-right -rotate-45 text-black bg-lime-300 rounded-full w-5 h-5 inline-flex justify-center items-center"></i></button>
+                  <button class="btn  btn-sm rounded-2xl text-xs bg-down-button-bg">View Details<i class="fa-solid fa-arrow-right -rotate-45 text-black bg-lime-300 rounded-full w-4 h-4 inline-flex justify-center items-center"></i></button>
                 </div>
               </div>
             </div>
-            <div class="border border-inherit border-solid p-3 w-fit lg:ml-32">
-              <img src="./assets/img2.png" alt="" class=" w-full">
+            
+            <div class="border border-inherit border-solid p-2 lg:w-fit lg:ml-32 w-full">
+              <img
+                  src="./assets/img2.png"
+                  class="lg:max-w-xs rounded-lg p-3 w-full" />
             </div>
+            
           </div>
 
 
 
-          <div class="grid lg:grid-cols-2 grid-cols-1 lg:max-w-screen-xl mt-10 lg:mx-auto w-full">
-            <div class="border border-inherit border-solid p-3 lg:ml-40 lg:w-fit">
+          <div class="grid lg:grid-cols-3 grid-cols-1 gap-2 lg:max-w-screen-xl mt-5 lg:mx-auto w-full">
+            <div class="border border-inherit border-solid p-3 lg:ml-40 ">
               <img src="./assets/img3.png" alt="" class=" w-full">
             </div>
-          
+            <div class="hero border border-inherit border-solid p-3">
+              <div class=" flex gap-5 flex-col lg:flex-row">
+                <img
+                  src="./assets/img4.png"
+                  class="lg:max-w-sm rounded-lg w-full" />
+                <div class="lg:mr-3">
+                  <h1 class="text-xl font-bold">Commercial</h1>
+                  <p class="py-6 text-xs">
+                    The barn house captivates with its blend of rustic charm and modern. 
+                  </p>
+                  <button class="btn  btn-sm rounded-2xl text-xs bg-down-button-bg">Details<i class="fa-solid fa-arrow-right -rotate-45 text-black bg-lime-300 rounded-full w-4 h-4 inline-flex justify-center items-center"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="border border-inherit border-solid p-3 lg:w-fit">
+              <img src="./assets/img5.png" alt="" class="lg:max-w-sm rounded-lg w-full">
+            </div>
 
           </div>
         </section>
-    </main>
-    <footer>
+        <!--property card section-->
+        <section>
+          <div class="grid lg:grid-cols-3 grid-cols-1 gap-3 lg:max-w-screen-xl lg:mx-auto mb-20 lg:px-32">
+            <div class="card bg-base-100 lg:w-80 mx-7 shadow-xl bg-white shadow-2xl">
+              <figure class="lg:px-2 pt-8">
+                <img
+                  src="./assets/bed.jpg"
+                  alt="bed"
+                  class="rounded-xl lg:w-72 w-full lg:h-48" />
+              </figure>
+              <div class="card-body text-left">
+                <h2 class="card-title text-lg font-bold"> Master Bedroom</h2>
+                <p class="text-xs text-color">My bedroom is a very special and different room. Thriugh the day it's a relaxing .</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 lg:w-80 w-full mx-7 shadow-xl bg-white shadow-2xl">
+              <figure class="lg:px-2  pt-8">
+                <img
+                  src="./assets/bed2.jpg"
+                  alt="bed"
+                  class="rounded-xl lg:w-72 w-full lg:h-48" />
+              </figure>
+              <div class="card-body text-left">
+                <h2 class="card-title text-lg font-bold">Gest Bedroom</h2>
+                <p class="text-xs text-color">My bedroom is a very special and different room. Thriugh the day it's a relaxing .</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 lg:w-80 mx-7 shadow-xl bg-white shadow-2xl">
+              <figure class="lg:px-2 pt-8">
+                <img
+                  src="./assets/bed3.jpg"
+                  alt="bed"
+                  class="rounded-xl lg:w-72 w-full lg:h-48" />
+              </figure>
+              <div class="card-body text-left">
+                <h2 class="card-title text-lg font-bold">Child room</h2>
+                <p class="text-xs text-color">My bedroom is a very special and different room. Thriugh the day it's a relaxing .</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
+
+
+
+        <!--log in form title-->
+        <section class=" bg-last-bg  overflow-hidden">
+          <div class="text-center space-y-2 lg:max-w-screen-xl lg:mx-auto px-8 lg:my-10">
+            <a class="btn btn-sm lg:mt-5 lg:ml-2 rounded-2xl bg-down-button-bg"><i class="fa-solid fa-arrow-right  text-gray-600 bg-down-button-bg rounded-full w-5 h-5 inline-flex justify-center items-center"></i>Let’s Connect</a>
+            <h2 class="text-3xl font-bold">Let’s Discuss Next Project</h2>
+            <p class="py-1 text-xs">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+          </div>
+
+           <!--Log in form-->
+          <div class="text-center space-y-2 lg:max-w-screen-xl lg:mx-auto px-8">
+            <div class="hero shadow-none">
+              <div class="">
+                <div class="card bg-last-bg">
+                  <form class="card-body">
+                    <div class="space-y-4">
+                      <br>
+                      <input type="text" placeholder="First Name" class="input input-bordered rounded-full text-xs lg:w-80 w-full -ml-8 " required />
+                      <input type="text" placeholder="Last Name" class="input input-bordered rounded-full text-xs lg:w-80 w-full -ml-8" required />
+                      <br>
+                      <input type="number" placeholder="Phone Number" class="input input-bordered rounded-full text-xs lg:w-80 w-full -ml-8" required />
+
+                      <input type="email" placeholder="Email Number" class="input input-bordered rounded-full text-xs lg:w-80 w-full -ml-8" required />
+                    </div>
+                    <div class="form-control">
+                      <input type="text" placeholder="Write your message here" class="input input-bordered rounded-2xl h-32 lg:w-80 w-full  -ml-4" required />
+                    <div class="form-control mt-6">
+                      <button class="btn  btn-sm rounded-2xl bg-button-color h-10 w-full  -ml-4">View Details<i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full w-5 h-5 inline-flex justify-center items-center"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="">
+      <section class=" bg-black overflow-hidden">
+        <div class="text-center space-y-2 lg:max-w-screen-xl lg:mx-auto px-8 lg:my-10">
+          <i class="fa-solid fa-arrow-right -rotate-45 text-black bg-button-color ml-2 rounded-full w-5 h-5 inline-flex justify-center items-center"></i>
+          <a class="font-bold text-xl ml-1 text-white">Rinterio</a>
+          <p class="py-1 text-xs text-white">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+
+      <section class="lg:max-w-screen-xl lg:mx-auto px-20">
+        <div>
+          <footer class="footer bg-black text-neutral-content p-10">
+            <nav>
+              <h6 class="footer-title">Home</h6>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Services</h6>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Portfolio</h6>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Blogs</h6>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Contact Us</h6>
+            </nav>
+
+          </footer>
+
+          <div class="lg:max-w-screen-xl lg:mx-auto text-center mb-5">
+            <a class="btn btn-sm rounded-2xl bg-button-color outline-none">Book consult <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full w-5 h-5 inline-flex justify-center items-center"></i></a>
+        </div>
+        </div>
+      </section>
     </footer>
 </body>
 </html>
+
+
+
+hero-content flex-col lg:flex-row-reverse
